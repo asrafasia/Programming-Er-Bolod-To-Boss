@@ -1,0 +1,84 @@
+/*main css style sheet*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  background-color:#00CCFF;
+}
+
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  font-family: Abril Fatface, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  font-size: 50px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron:hover {
+	background-color:#CCCCCC;
+}
+
+.jumbotron h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  text-shadow: none;
+  margin: 5px;
+}
+
+.btn.btn-primary:hover {
+  color: #000;
+  background-color:#993399;
+}
+
+.btn-secondary {
+  background-color:#00CCFF;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+footer {
+  font-size: 24px;
+  padding: 20px 0;
+  float: right;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}

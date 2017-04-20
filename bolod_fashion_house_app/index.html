@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fashion House</title>
+		<link rel="icon" type="image/x-icon" href="images/shopping-cart.png"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
+		<script src="main.js"></script>
+		<header class="container">
+			<div class="row">
+				<img src="images/shirt.png" alt="Logo" />
+				<h1 class="col-sm-8">Bolod Shaar Fashion House</h1>
+			</div>
+		  </header>		
+		  <section class="jumbotron">
+			<div class="container">
+				<div class="row text-justify">
+				<p><span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Etiam ac eros purus. Nullam venenatis lacus sed dictum bibendum. Vivamus placerat sit amet ligula ut porta. Sed vitae justo erat. Nulla vehicula sapien velit, interdum pulvinar lorem gravida vitae. Morbi eu sapien luctus, cursus augue malesuada, imperdiet lorem. In eget ligula laoreet.</p>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<figure class="jumbotron" id="searchItem">
+					<input id="search" class="col-sm-8" placeholder="Type here your desire cloth name">
+					<button onClick="bolodFashion.isItemAvailable()" class="btn btn-primary">Search Cloths</button>
+				</figure>
+				
+				<figure class="jumbotron" id="searchPrice">
+					<input type="text" id="price" class="col-sm-8" placeholder="Type here your favorite cloth name and know your desire cloth's price">
+					<button onClick="bolodFashion.getPrice()" class="btn btn-primary">Search Price</button>
+				</figure>
+				
+				<figure class="jumbotron">
+					<div class="row">
+						<button onClick="myReload()" class="btn btn-secondary">
+							<h2 class="col-sm-6 text-center">Sales</h2>
+						</button>
+						<form id="sellItem">
+							<label>Cloth Name</label>
+							<input type="text" id="userInput01">
+							<label>Quantity</label>
+							<input type="" id="userInput02">
+							<button onClick="bolodFashion.sellItem()" class="btn btn-primary">Sale</button>
+						</form>
+					</div>
+				</figure>
+				
+				<figure class="jumbotron">
+					<div class="row">
+						<button onClick="myReload()" class="btn btn-secondary">
+							<h2 class="col-sm-6 text-center">Add New Item</h2>
+						</button>
+						<form id="addItem">
+							<label>Cloth Name</label>
+							<input type="text" id="userInput1">
+							<label>Cloth Price</label>
+							<input type="text" id="userInput2">
+							<label>Quantity</label>
+							<input type="text" id="userInput3">
+							<button onClick="bolodFashion.addItem()" class="btn btn-primary">Add Cloth</button>
+						</form>
+					</div>
+				</figure>
+				
+				<figure class="jumbotron" id="totalSell">
+					<button onClick="bolodFashion.getTotalSell()" class="btn btn-secondary">
+						<h2 class="col-sm-6 text-center">Total Sales</h2>
+					</button>
+				</figure>
+					
+				<figure class="jumbotron" id="rent">
+					<button onClick="bolodFashion.payRent()" class="btn btn-secondary">
+						<h2 class="col-sm-6 text-center">Pay Rent</h2>
+					</button>
+				</figure>
+				
+				<figure class="jumbotron" id="show">
+					<button onClick="bolodFashion.showAllItems()" class="btn btn-secondary">
+						<h2 class="col-sm-6 text-center">Show A - Z item list</h2>
+					</button>
+				</figure>
+			</div>
+		</section>
+		<footer class="container">
+			<div class="row">
+				<p class="col-sm-8">Developed by &copy; <a target="_blank" href="https://jamal-pb95.github.io/">Jamal Uddin</a> &amp; <br />
+				Inspired from <a target="_blank" href="http://jhankarmahbub.com/">Jhankar Mahbub</a></p>
+				<ul class="col-sm-8">
+					<h2>AROUND THE WEB</h2>
+					<li class="col-sm-1"><a target="_blank" href="https://www.facebook.com/jamal.pb95"><img src="images/social-icon/facebook.svg"></a></li>
+					<li class="col-sm-1"><a target="_blank" href="https://twitter.com/jamal_uddin95"><img src="images/social-icon/twitter.svg"></a></li>
+					<li class="col-sm-1"><a target="_blank" href="https://www.linkedin.com/in/jamal-pb95/"><img src="images/social-icon/linkedin.svg"></a></li>
+					<li class="col-sm-1"><a target="_blank" href="https://plus.google.com/u/0/117327456764610517642">
+					<img src="images/social-icon/google-plus.svg"></a></li>
+					<li class="col-sm-1"><a target="_blank" href="https://github.com/jamal-pb95"><img src="images/social-icon/github-logo.svg"></a></li>
+				</ul>
+			</div>
+		</footer>
+		<script>
+			function myReload() {
+    			location.reload();
+			}
+		</script>
+	</body>
+</html>
